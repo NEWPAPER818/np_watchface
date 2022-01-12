@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background-color: black;
+
+  color: white;
+  font-family: 'SBAggroM';
+
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+
+  color: white;
+}
+
+/* NP Watch Face */
+h1 {
+  font-size: 50px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* NEW DIGITAL ANALOG OTHERS */
+
+
+img {
+
+
+}
+
+/* class =================================================================== */
+/* top ============================================== */
+.top {
+  display: table;
+
+  height: 140px;
+  text-align: center;
+
+  margin: auto;
+  margin-top: 10px;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+
+  padding-left: 20px;
+}
+
+.np_watch_face {
+  display: table-cell;
+  vertical-align: middle;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.line_long {
+  border-bottom: 5px solid rgb(50,50,50);
+}
+
+
+/* list ============================================== */
+.list {
+  text-align: center;
+  font-size: 30px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.list_box {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.line_short {
+  width: 450px;
+  border-bottom: 3px solid rgb(50,50,50);
+  margin: auto;
+}
+
+/* apps ============================================== */
+.apps {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.app_box{
+  /* display: inline-block; */
+  width: 300px;
+  padding: 20px;
+}
+
+/* sns ============================================== */
+.sns {
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sns_box {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media(max-width: 750px) {
+  .line_short {
+    width: 60vw;
+  }
+}
+
+/* bottom ============================================== */
+.bottom {
+
+}
