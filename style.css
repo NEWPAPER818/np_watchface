@@ -93,13 +93,21 @@ img {
 /* apps ============================================== */
 .apps {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .app_box{
   /* display: inline-block; */
   width: 300px;
   padding: 20px;
+}
+
+.for_wear_os {
+  text-align: center;
+  font-size: 25px;
+
+  padding-bottom: 15px;
+
 }
 
 /* sns ============================================== */
@@ -125,3 +133,33 @@ img {
 .bottom {
 
 }
+
+
+/* mobile */
+@media (max-width: 1000px) {
+  .list {
+    font-size: 40px;
+  }
+
+  .for_wear_os {
+    font-size: 30px;
+  }
+
+  .app_box{
+    width: 500px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end */
