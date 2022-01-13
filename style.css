@@ -17,27 +17,37 @@ body {
 
 a {
   text-decoration: none;
-
   color: white;
 }
 
 /* NP Watch Face */
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-/* NEW DIGITAL ANALOG OTHERS */
-
-
-img {
-
-
+/* class =================================================================== */
+/* line box ========================================== */
+.line_long {
+  border-bottom: 5px solid rgb(50,50,50);
 }
 
-/* class =================================================================== */
+.line_short {
+  width: 450px;
+  border-bottom: 3px solid rgb(50,50,50);
+  margin: auto;
+}
+
+.empty_box_big {
+  height: 150px;
+}
+
+.empty_box_small {
+  height: 50px;
+}
+
 /* top ============================================== */
 .top {
   display: table;
@@ -63,30 +73,38 @@ img {
   padding: 20px;
 }
 
-.line_long {
-  border-bottom: 5px solid rgb(50,50,50);
-}
-
-
 /* list ============================================== */
 .list {
+  display: table;
   text-align: center;
-  font-size: 30px;
 
+  height: 50px;
+  margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+.list_table {
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.list_table_all {
+  width: 120px;
+}
+
 .list_box {
-  display: inline-block;
+  font-size: 30px;
+  color: rgb(150,150,150);
+
   padding-left: 12px;
   padding-right: 12px;
 }
 
-.line_short {
-  width: 450px;
-  border-bottom: 3px solid rgb(50,50,50);
-  margin: auto;
+.list_here {
+  font-size: 35px;
+  color: white;
 }
 
 /* apps ============================================== */
@@ -98,7 +116,7 @@ img {
 .app_box{
   /* display: inline-block; */
   width: 300px;
-  padding: 20px;
+  margin: 20px;
 }
 
 .for_wear_os {
@@ -109,45 +127,76 @@ img {
 
 }
 
-/* sns ============================================== */
-.sns {
+
+
+/* bottom ============================================== */
+.bottom {
   text-align: center;
 
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
+}
+
+.sns{
+  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .sns_box {
-  padding-left: 12px;
-  padding-right: 12px;
+  width: 50px;
+
+  margin: 12px;
 }
 
+.privacy_policy_box {
+  font-size: 30px;
+}
+
+/* display ==================================================================*/
 @media(max-width: 750px) {
   .line_short {
     width: 60vw;
   }
 }
 
-/* bottom ============================================== */
-.bottom {
-
+@media (min-width: 2000px) {
+  .apps {
+    width: 1800px;
+    margin: auto;
+  }
 }
 
-
-/* mobile */
+/* mobile ===================================================================*/
 @media (max-width: 1000px) {
-  .list {
+  .list_box {
+    font-size: 35px;
+  }
+
+  .list_here {
     font-size: 40px;
+    color: white;
   }
 
   .for_wear_os {
     font-size: 30px;
   }
 
-  .app_box{
+  .app_box {
     width: 400px;
   }
 
+  .sns_box {
+    width: 90px;
+    margin: 20px;
+  }
+
+  .empty_box_big {
+    height: 100px;
+  }
+
+  .privacy_policy_box {
+    font-size: 40px;
+  }
 
 }
 
