@@ -134,7 +134,7 @@ h1 {
   text-align: center;
 
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 500px;
 }
 
 .sns{
@@ -175,6 +175,14 @@ h1 {
   .list_here {
     font-size: 40px;
     color: white;
+  }
+
+  .list_table {
+    width: 225px;
+  }
+
+  .list_table_all {
+    width: 120px;
   }
 
   .for_wear_os {
