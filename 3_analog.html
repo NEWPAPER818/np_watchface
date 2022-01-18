@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>NP WF - ANALOG</title>
+
     <link rel="stylesheet" href="style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,7 +22,7 @@
     <!-- top ============================================================== -->
     <div class="top">
       <div class="logo">
-        <a href = "index.html"><img src="img/np_logo_white.png" width="120"></a>
+        <a href = "index.html"><img class="logo_img" src="img/np_logo/np_logo_white.png"></a>
       </div>
 
       <div class="np_watch_face">
@@ -43,6 +44,9 @@
 
     <!-- apps ============================================================= -->
     <div class="apps">
+      <div class="darklight">
+        <button class=dark_light_btn type="button" name="dark_light_handler" value="to_light"><img class=dark_light_btn_img src="img/dark_light_icon/to_light_icon.png"></button>
+      </div>
 
       <a href= "https://play.google.com/store/apps/details?id=com.watchfacestudio.awf2" target="_blank" title="AWF2 - Google Play"><img src="img/awf/awf2.png" class="app_box" alt="AWF2 - Get it on Google Play"></a>
 
@@ -74,11 +78,13 @@
       <div class="empty_box_big"></div>
 
       <div class="">
-        <img src="img/np_logo_white.png" width="120">
+        <img class="logo_img" src="img/np_logo/np_logo_white.png">
       </div>
     </div>
 
 
 
   </body>
-  </html>
+  <script src="darklight.js"></script>
+
+</html>

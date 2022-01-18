@@ -1,3 +1,47 @@
+
+body {
+  --background: white;
+  --font_color: black;
+  --line_color: rgb(100,100,100);
+  --list_box_font_color: rgb(80,80,80);
+  --list_here_font_color: black;
+  --logo_img_path: url("img/np_logo/np_logo_black.png");
+  --color_theme_btn_img_path: url("img/dark_light_icon/to_dark_icon.png");
+}
+body.dark-theme {
+  --background: black;
+  --font_color: white;
+  --line_color: rgb(50,50,50);
+  --list_box_font_color: rgb(150,150,150);
+  --list_here_font_color: white;
+  --logo_img_path: url("img/np_logo/np_logo_white.png");
+  --color_theme_btn_img_path: url("img/dark_light_icon/to_light_icon.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --background: black;
+    --font_color: white;
+    --line_color: rgb(50,50,50);
+    --list_box_font_color: rgb(150,150,150);
+    --list_here_font_color: white;
+    --logo_img_path: url("img/np_logo/np_logo_white.png");
+    --color_theme_btn_img_path: url("img/dark_light_icon/to_light_icon.png");
+  }
+  body.light-theme {
+    --background: white;
+    --font_color: black;
+    --line_color: rgb(100,100,100);
+    --list_box_font_color: rgb(80,80,80);
+    --list_here_font_color: black;
+    --logo_img_path: url("img/np_logo/np_logo_black.png");
+    --color_theme_btn_img_path: url("img/dark_light_icon/to_dark_icon.png");
+  }
+}
+
+
+/* font ==================================================================== */
 @font-face {
     font-family: 'SBAggroM';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
@@ -5,11 +49,11 @@
     font-style: normal;
 }
 
-
+/* tag ===================================================================== */
 body {
-  background-color: black;
+  background-color: var(--background);
+  color: var(--font_color);
 
-  color: white;
   font-family: 'SBAggroM';
 
   margin: auto;
@@ -17,7 +61,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--font_color);
 }
 
 /* NP Watch Face */
@@ -31,12 +75,12 @@ h1 {
 /* class =================================================================== */
 /* line box ========================================== */
 .line_long {
-  border-bottom: 5px solid rgb(50,50,50);
+  border-bottom: 5px solid var(--line_color);
 }
 
 .line_short {
   width: 450px;
-  border-bottom: 3px solid rgb(50,50,50);
+  border-bottom: 3px solid var(--line_color);
   margin: auto;
 }
 
@@ -64,6 +108,11 @@ h1 {
   vertical-align: middle;
 
   padding-left: 20px;
+}
+
+.logo_img {
+  width: 120px;
+  content:var(--logo_img_path);
 }
 
 .np_watch_face {
@@ -96,7 +145,7 @@ h1 {
 
 .list_box {
   font-size: 30px;
-  color: rgb(150,150,150);
+  color: var(--list_box_font_color);
 
   padding-left: 12px;
   padding-right: 12px;
@@ -104,13 +153,27 @@ h1 {
 
 .list_here {
   font-size: 35px;
-  color: white;
+  color: var(--list_here_font_color);
 }
 
 /* apps ============================================== */
+.dark_light_btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.dark_light_btn_img {
+  width: 40px;
+  content: var(--color_theme_btn_img_path);
+}
+
 .apps {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 .app_box{
@@ -123,8 +186,8 @@ h1 {
   text-align: center;
   font-size: 25px;
 
+  padding-top: 20px;
   padding-bottom: 15px;
-
 }
 
 
@@ -174,7 +237,7 @@ h1 {
 
   .list_here {
     font-size: 40px;
-    color: white;
+    /* color: white; */
   }
 
   .list_table {
@@ -206,7 +269,17 @@ h1 {
     font-size: 40px;
   }
 
+  .dark_light_btn {
+    width: 65px;
+    height: 65px;
+  }
+
+  .dark_light_btn_img {
+    width: 50px;
+  }
+
 }
+
 
 
 
