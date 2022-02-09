@@ -182,12 +182,23 @@ h1 {
   margin: 20px;
 }
 
-.for_wear_os {
+.app_box_free{
+  width: 400px;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.text {
   text-align: center;
   font-size: 25px;
 
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+#timer {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 
@@ -213,6 +224,11 @@ h1 {
 
 .privacy_policy_box {
   font-size: 30px;
+}
+
+.log {
+  font-size: 20px;
+  padding-left: 40px;
 }
 
 /* display ==================================================================*/
@@ -248,12 +264,20 @@ h1 {
     width: 120px;
   }
 
-  .for_wear_os {
+  .text {
     font-size: 30px;
+  }
+
+  #timer {
+    font-size: 25px;
   }
 
   .app_box {
     width: 400px;
+  }
+
+  .app_box_free{
+    width: 500px;
   }
 
   .sns_box {
