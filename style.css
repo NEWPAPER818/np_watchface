@@ -228,7 +228,8 @@ h1 {
 
 .log {
   font-size: 20px;
-  padding-left: 40px;
+  width: 800px;
+  margin: auto;
 }
 
 /* display ==================================================================*/
