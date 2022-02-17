@@ -69,4 +69,4 @@ else {
   document.getElementById("event_new").style.display = "none";
 }
 
-document.getElementById("event_free").style.display = "none";
+// document.getElementById("event_free").style.display = "none";
