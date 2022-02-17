@@ -2,8 +2,8 @@
 
 
 var now = new Date().getTime()
-var start_show = new Date('2022-02-10 00:00:00').getTime()  //event start time UTC(GMT+0)
-var end_show = new Date('2022-02-11 23:59:00').getTime()    //event end time UTC(GMT+0)
+var start_show = new Date('2022-02-16 00:00:00').getTime()  //event start time UTC(GMT+0)
+var end_show = new Date('2022-02-25 23:59:00').getTime()    //event end time UTC(GMT+0)
 
 var m = new Date().getTimezoneOffset();
 start_show -= (m * 1000 * 60);  //to local time
@@ -66,5 +66,7 @@ if (start_show <= now && now <= end_show){
   setInterval('Timer()', 1000); //interval 1sec
 }
 else {
-  document.getElementById("event").style.display = "none";
+  document.getElementById("event_new").style.display = "none";
 }
+
+document.getElementById("event_free").style.display = "none";
